@@ -1,0 +1,9 @@
+---
+HOSTS:
+  centos-64-x64:
+    roles:
+      - master
+    platform: el-6-x86_64
+    box: centos-64-x64-vbox4210
+    box_url: http://puppet-vagrant-boxes.puppetlabs.com/centos-65-i386-virtualbox-puppet.box
+    hypervisor: vagrant
