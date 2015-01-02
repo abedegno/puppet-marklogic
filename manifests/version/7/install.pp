@@ -23,6 +23,8 @@ class marklogic::version::7::install inherits marklogic::activator {
     path        => $::path,
     refreshonly => true,
     subscribe   => Package['MarkLogic'],
+    tries       => 3,
+    try_sleep   => 15,
   }
   exec { 'manually_restart_service':
     command     => $restart_service_cmd,
